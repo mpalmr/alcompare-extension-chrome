@@ -1,0 +1,29 @@
+{
+  "name": "@alcompare/extension-chrome",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && tsc && cp assets/* dist",
+    "clean": "rm -rf dist",
+    "cp": "cp dist /mnt/c"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.4.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^28.8.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
