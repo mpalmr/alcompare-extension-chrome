@@ -3,9 +3,18 @@
   "name": "Alcompare Chrome",
   "description": "See how algorithms are influencing you",
   "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "http://localhost:3000/*"
+  ],
   "action": {
     "default_popup": "default.html",
     "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
