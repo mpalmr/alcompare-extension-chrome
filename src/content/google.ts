@@ -27,23 +27,4 @@
     action: 'sendGoogleResults',
     data: { query, items },
   });
-
-  // fetch('https://localhost:3000/results/google', {
-  //   method: 'POST',
-  //   headers: {
-  //     Accepts: 'application/json',
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({ query, items }),
-  // })
-  //   .then((res) => {
-  //     if (!res.ok) throw new Error('Non-ok response');
-  //     if (res.status !== 201) {
-  //       throw new Error(`Failed to create result on server: ${res.statusText}`);
-  //     }
-  //   });
-
-  // document.body.appendChild(Object.assign(document.createElement('pre'), {
-  //   textContent: JSON.stringify({ query, items}, null, 2),
-  // }));
 })();
