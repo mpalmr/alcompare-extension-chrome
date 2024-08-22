@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn clean && tsc && cp assets/* dist",
     "clean": "rm -rf dist",
-    "cp": "cp dist /mnt/c"
+    "cp": "cp -r dist /mnt/c"
   },
   "dependencies": {},
   "devDependencies": {
